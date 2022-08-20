@@ -1,5 +1,5 @@
 {
-  "name": "R-Funamoto_Gulp_Dart-Sass_EJS",
+  "name": "R-Funamoto_Gulp_Dart-Sass_Pug",
   "version": "1.0.0",
   "description": "Dart Sass対応Pug用gulpfile",
   "main": "index.js",
