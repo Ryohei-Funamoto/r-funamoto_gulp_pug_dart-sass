@@ -1,0 +1,18 @@
+extends ./common/_layout
+
+block pageId
+  - let pageId = 'home';
+
+block mainVisual
+  .l-mv.p-mv
+    .l-container.p-mv__container
+      .p-mv__content
+        .p-mv__title トップページ
+
+block content
+  .l-section.p-section
+    .l-container.p-section__container
+      h2.p-section__title セクションタイトル
+      .p-section__body
+        p.p-section__description セクションの説明文
+      .test.js-test テスト

@@ -1,0 +1,24 @@
+{
+  "siteInfo": {
+    "siteName": "Pugのデモサイト",
+    "siteUrl": "サイトのドメイン"
+  },
+  "pages": {
+    "home": {
+      "name": "home",
+      "title": "ホーム",
+      "description": "トップページの説明",
+      "ogpImage": "",
+      "type": "website",
+      "slug": "/"
+    },
+    "blog": {
+      "name": "blog",
+      "title": "ブログ",
+      "description": "ブログページの説明",
+      "ogpImage": "",
+      "type": "article",
+      "slug": "/blog/"
+    }
+  }
+}

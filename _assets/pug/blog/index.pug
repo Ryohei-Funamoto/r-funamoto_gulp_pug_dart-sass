@@ -1,0 +1,17 @@
+extends ../common/_layout
+
+block pageId
+  - let pageId = 'blog';
+
+block mainVisual
+  .l-mv.p-mv
+    .l-container.p-mv__container
+      .p-mv__content
+        .p-mv__title ブログページ
+
+block content
+  .l-blog-content.blog-content
+    .l-container.blog-content__container
+      .blog-content__body
+        p.blog-content__description ブログページのコンテンツ
+      .test.js-test テスト

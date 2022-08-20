@@ -1,0 +1,32 @@
+head(prefix=(pageId == 'home') ? "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#" : "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#")
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  meta(name="format-detection" content="telephone=no")
+  if pageId == 'home'
+    title= siteInfo.siteName
+  else
+    title= pages[pageId].title + ' | ' + siteInfo.siteName
+  // SEO 
+  meta(name="description" content=pages[pageId].description)
+  // OGP 
+  meta(property="og:url" content=siteInfo.siteUrl + pages[pageId].slug)
+  meta(property="og:type" content=pages[pageId].type)
+  meta(property="og:title" content=(pageId == 'home') ? siteInfo.siteName : pages[pageId].title + ' | ' + siteInfo.siteName)
+  meta(property="og:description" content=pages[pageId].description)
+  meta(property="og:site_name" content=siteInfo.siteName)
+  meta(property="og:image" content=pages[pageId].ogpImage)
+  meta(name="twitter:card" content="summary or summary_large_image")
+  meta(name="twitter:site" content="@ユーザー名")
+  // タッチアイコン 
+  link(rel="apple-touch-icon" sizes="192x192" href="")
+  link(rel="shortcut icon" sizes="192x192" href="")
+  // ファビコン 
+  link(rel="icon" href="")
+  // クローラー 
+  meta(name="robots" content="noindex, nofollow")
+  // CSS 
+  link(rel="stylesheet" href="/css/style.css")
+  if pageId == 'blog'
+    link(rel="stylesheet", href="/css/blog.css")
+  // jQuery 
+  script(src="/js/lib/jquery-3.6.0.min.js")

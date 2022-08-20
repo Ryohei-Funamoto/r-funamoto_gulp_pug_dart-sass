@@ -1,0 +1,14 @@
+header.l-header.p-header
+  .l-container.p-header__container
+    .p-header__inner
+      if pageId == 'home'
+        h1.p-header__logo.c-logo= siteInfo.siteName
+      else
+        p.p-header__logo.c-logo: a(href="/")= siteInfo.siteName
+      nav
+        ul
+          each page in pages
+            if page.name == pageId
+              li.is-current= page.title
+            else
+              li: a(href=page.slug)= page.title

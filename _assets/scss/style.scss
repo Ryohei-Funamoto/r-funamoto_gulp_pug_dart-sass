@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@use "./foundation/sanitize";
+@use "./foundation/reset";
+@use "./foundation/base";
+@use "./foundation/form";
+@use "./layout/**";
+@use "./object/**";
+@use "./page/test/**";
+@use "./structure/**";
