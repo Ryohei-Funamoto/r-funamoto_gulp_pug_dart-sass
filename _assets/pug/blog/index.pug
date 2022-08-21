@@ -3,15 +3,15 @@ extends ../common/_layout
 block pageId
   - let pageId = 'blog';
 
-block mainVisual
-  .l-mv.p-mv
-    .l-container.p-mv__container
-      .p-mv__content
-        .p-mv__title ブログページ
-
 block content
-  .l-blog-content.blog-content
-    .l-container.blog-content__container
-      .blog-content__body
-        p.blog-content__description ブログページのコンテンツ
-      .test.js-test テスト
+  main.l-blog
+    .l-blog__mv.l-blog-mv.blog-mv
+      .l-container.blog-mv__container
+        .blog-mv__content
+          .blog-mv__title ブログページ
+
+    .l-blog__main-area.blog-main-area
+      .l-container.blog-main-area__container
+        h2.blog-main-area__title ブログのタイトルが入ります。ブログのタイトルが入ります。ブログのタイトルが入ります。
+        p.home-about__description ブログの説明文が入ります。ブログの説明文が入ります。ブログの説明文が入ります。
+        .test.js-test テスト

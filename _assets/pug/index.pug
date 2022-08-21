@@ -3,16 +3,15 @@ extends ./common/_layout
 block pageId
   - let pageId = 'home';
 
-block mainVisual
-  .l-mv.p-mv
-    .l-container.p-mv__container
-      .p-mv__content
-        .p-mv__title トップページ
-
 block content
-  .l-section.p-section
-    .l-container.p-section__container
-      h2.p-section__title セクションタイトル
-      .p-section__body
-        p.p-section__description セクションの説明文
-      .test.js-test テスト
+  main.l-home
+    .l-home__mv.l-home-mv.home-mv
+      .l-container.home-mv__container
+        .home-mv__content
+          .home-mv__title トップページ
+
+    section.l-home__about.home-about
+      .l-container.home-about__container
+        h2.home-about__title タイトルが入ります。タイトルが入ります。タイトルが入ります。
+        p.home-about__description 説明文が入ります。説明文が入ります。説明文が入ります。
+        .test.js-test テスト
