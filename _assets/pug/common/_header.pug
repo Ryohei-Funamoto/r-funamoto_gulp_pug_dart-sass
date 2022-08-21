@@ -4,7 +4,7 @@ header.l-header.p-header
       if pageId == 'home'
         h1.p-header__logo.c-logo= siteInfo.siteName
       else
-        p.p-header__logo.c-logo: a(href="/")= siteInfo.siteName
+        p.p-header__logo.c-logo: a(href=pages.home.slug)= siteInfo.siteName
       nav
         ul
           each page in pages
