@@ -1,4 +1,4 @@
-head(prefix=(pageId == 'home') ? "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#" : "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#")
+head(prefix=`og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# ${pages[pageId].type}: http://ogp.me/ns/${pages[pageId].type}#`)
   meta(charset="UTF-8")
   meta(name="viewport" content="width=device-width, initial-scale=1.0")
   meta(name="format-detection" content="telephone=no")
