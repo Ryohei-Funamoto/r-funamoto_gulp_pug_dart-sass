@@ -26,3 +26,4 @@
 ## Pug
 * _assets/pug/commonフォルダ内には、ヘッダー、フッター等の共通パーツを格納します。
 * _assets/dataフォルダには、各ページのタイトル、ディスクリプション等を管理しているJSONファイルが格納されております。
+* 各ページのファイル(_assets/pug/index.html または _assets/pug/下層ページのフォルダ/index.html)で_assets/pug/common/_layout.pugを継承し、block pageId(任意のページID)とblock content(ページのコンテンツ)を上書きします。
