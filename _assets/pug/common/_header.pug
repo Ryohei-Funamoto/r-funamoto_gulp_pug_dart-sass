@@ -5,8 +5,8 @@ header(class=(pageId == 'home') ? 'l-header p-header' : 'l-header p-header p-hea
         h1.p-header__logo.c-logo= siteInfo.siteName
       else
         p.p-header__logo.c-logo: a(href=pages.home.slug)= siteInfo.siteName
-      nav
-        ul
+      nav.p-header__nav.p-gnav
+        ul.p-gnav__items
           each page in pages
             if page.name == pageId
               li.is-current= page.title
