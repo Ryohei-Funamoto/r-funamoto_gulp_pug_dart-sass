@@ -1,7 +1,7 @@
 footer.l-footer.p-footer
   .l-container.p-footer__container
-    nav
-      ul
+    nav.p-footer__nav.p-footer-nav
+      ul.p-footer-nav__items
         each page in pages
           li: a(href=page.slug)= page.title
     p.p-footer__copyright &copy;&nbsp;2020&nbsp;-
