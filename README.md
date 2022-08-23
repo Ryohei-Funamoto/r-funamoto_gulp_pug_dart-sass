@@ -5,7 +5,8 @@
 1. ターミナルを起動する。
 2. cdコマンドで_gulpフォルダに移動する。
 3. 「npm i」コマンドを実行し、package-lock.jsonとnode_modulesを生成する。
-4. 「npx gulp」コマンドを実行し、Gulpを起動させる。
+4. 開発時は「npx gulp」コマンドを入力する。
+5. 本番公開時は「npx gulp --production」コマンドを入力する。
 
 ## 注意点
 * 開発フォルダは_assetsです。
