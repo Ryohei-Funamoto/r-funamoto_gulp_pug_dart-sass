@@ -183,7 +183,7 @@ const imgImagemin = () => {
       }
       ))
     .pipe(dest(distPath.img)) // HTMLサイトの吐き出し先
-  // .pipe(dest(distPath.img)) // WordPressサイトの吐き出し先
+  // .pipe(dest(distPath.wpImg)) // WordPressサイトの吐き出し先
 };
 
 
@@ -201,7 +201,7 @@ const html = () => {
 const public_file = () => {
   return src(publicPath.public)
     .pipe(dest(distBase)) // HTMLサイトの吐き出し先
-    // .pipe(dest(serverBase)) // WordPressサイトの吐き出し先
+  // .pipe(dest(serverBase)) // WordPressサイトの吐き出し先
 };
 
 /**
