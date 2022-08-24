@@ -74,12 +74,12 @@ else if (env === 'development') {
 const del = require('del');
 
 const delPath = {
-  'css': distBase + '/css/**/*.css',
-  'js': distBase + '/js/**/*.js',
+  'css': distBase + '/css/**',
+  'js': distBase + '/js/**',
   'img': distBase + '/img/**',
   'html': distBase + '/**/*.html',
-  // 'wpCss': serverBase + '/css/**/*.css',
-  // 'wpJs': serverBase + '/js/**/*.js',
+  // 'wpCss': serverBase + '/css/**',
+  // 'wpJs': serverBase + '/js/**',
   // 'wpImg': serverBase + '/img/**'
 };
 const clean = (done) => {
