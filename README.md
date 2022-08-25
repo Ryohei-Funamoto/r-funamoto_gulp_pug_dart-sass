@@ -1,4 +1,4 @@
-# R-Funamoto_Gulp_Dart-Sass_Pug
+# r-funamoto_gulp_dart-sass_pug
 * 当ファイルはDart Sass, Pug対応のgulpfileです。
 
 ## 手順
