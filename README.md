@@ -1,5 +1,5 @@
-# r-funamoto_gulp_dart-sass_pug
-* 当ファイルはDart Sass, Pug対応のgulpfileです。
+# r-funamoto_pug_gulp_dart-sass
+* 当ファイルはPug, Dart Sass対応のgulpfileです。
 
 ## 手順
 1. ターミナルを開きます。
