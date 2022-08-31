@@ -15,8 +15,8 @@
 * 自動キャッシュクリア
 
 ## 注意点
-* 開発フォルダはassetsです。
-* assetsフォルダ内のファイルはstatic/distフォルダに吐き出されます。
+* 開発フォルダはsrcです。
+* srcフォルダ内のファイルはdistフォルダに吐き出されます。
 
 ## Nodeについて
 * node v16.14.0にて動作を確認済。
@@ -31,6 +31,6 @@
 * structureフォルダには、JSライブラリ等のCSSを格納します。
 
 ## Pug
-* assets/pug/commonフォルダ内には、ヘッダー、フッター等の共通パーツを格納します。
-* assets/dataフォルダには、各ページのタイトル、ディスクリプション等を管理しているJSONファイルが格納されております。
-* 各ページのファイル(assets/pug/index.pug 及び assets/pug/**/index.pug)でassets/pug/common/_layout.pugを継承し、block pageId(任意のページID)とblock content(ページのコンテンツ)を上書きします。
+* src/pug/commonフォルダ内には、ヘッダー、フッター等の共通パーツを格納します。
+* src/dataフォルダには、各ページのタイトル、ディスクリプション等を管理しているJSONファイルが格納されております。
+* 各ページのファイル(src/pug/index.pug 及び src/pug/**/index.pug)でsrc/pug/common/_layout.pugを継承し、block pageId(任意のページID)とblock content(ページのコンテンツ)を上書きします。
