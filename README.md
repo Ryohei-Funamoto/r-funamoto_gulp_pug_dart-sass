@@ -33,4 +33,4 @@
 ## Pug
 * src/pug/commonフォルダ内には、ヘッダー、フッター等の共通パーツを格納します。
 * src/dataフォルダには、各ページのタイトル、ディスクリプション等を管理しているJSONファイルが格納されております。
-* 各ページのファイル(src/pug/index.pug 及び src/pug/**/index.pug)でsrc/pug/common/_layout.pugを継承し、block pageId(任意のページID)とblock content(ページのコンテンツ)を上書きします。
+* 各ページのファイル(src/pug/index.pug 及び src/pug/**/index.pug)でsrc/pug/common/_layout.pug(レイアウト用テンプレート)を継承し、block pageId(任意のページID)とblock content(ページのコンテンツ)を上書きします。
