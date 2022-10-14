@@ -1,0 +1,10 @@
+.l-breadcrumb.p-breadcrumb
+  each item, index in pages[pageId].breadcrumb
+    - let path = pages[pageId].breadcrumb[index].path
+    - let label = pages[pageId].breadcrumb[index].label
+    if path == ''
+      span: span.current-item= label
+    else
+      span: a(href=path)= label
+      | &nbsp;&gt;&nbsp;
+<!-- /.l-breadcrumb p-breadcrumb -->

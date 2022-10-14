@@ -6,20 +6,9 @@ block pageId
 block content
   .l-blog
     main
-      .l-blog__mv.l-blog-mv.blog-mv
-        .l-container.blog-mv__container
-          .blog-mv__content
-            .blog-mv__title ブログページ
-          <!-- /.blog-mv__content -->
-        <!-- /.l-container blog-mv__container -->
-      <!-- /.l-blog__mv l-blog-mv blog-mv -->
-        
-
-      .l-blog__main-area.blog-main-area
-        .l-container.blog-main-area__container
-          h2.blog-main-area__title ブログのタイトルが入ります。ブログのタイトルが入ります。ブログのタイトルが入ります。
-          p.home-about__description ブログの説明文が入ります。ブログの説明文が入ります。ブログの説明文が入ります。
-          .test テスト
-        <!-- /.l-container blog-main-area__container -->
-      <!-- /.l-blog__main-area blog-main-area -->
+      .l-container
+        include ../common/_breadcrumb
+        | ブログページです。
+        .test テスト
+      <!-- /.l-container -->
   <!-- /.l-blog -->
