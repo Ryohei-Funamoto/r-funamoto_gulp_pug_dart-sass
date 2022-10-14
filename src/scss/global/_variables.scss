@@ -101,6 +101,15 @@ $opacity: 0.7;
 // --------------------
 // フォントの設定
 // --------------------
+$font-family-base: "";
+$font-family-sub: "";
+$font-size-base: 16px;
+$font-weight-base: $regular;
+$line-height-base: 1.5;
+
+// --------------------
+// color
+// --------------------
 $color-main: #00A1E9 !default;
 $color-sub: #002241 !default;
 $color-accent: #EFA545 !default;
